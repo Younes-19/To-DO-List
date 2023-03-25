@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List</title>
+
+    <!-- bootstrap File css -->
+    <link rel="stylesheet" href="css_file/bootstrap.min.css">
+    <!-- fontawesome File -->
+    <link rel="stylesheet" href="css_file/all.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css_file/style.css">
+</head>
+
+<body>
+
+    <div class="headerr">
+        <div class="container">
+            <div class="main-titel ">
+                <h1 class="hederTitel  ">مهامي</h1>
+            </div>
+
+            <div class="heder-btn    text-white">
+
+                <button id="add-btn" class=" heade-btn main-btn add_btn btn  bg-white ">اضافه مهمه</button>
+
+                <button id="showTasks" class="active  hoeBTN heade-btn btn main-btn bg-white   " data-filter="all">جميع
+                    المهام</i></button>
+
+                <button id="showCompletTasks" class=" hoeBTN heade-btn main-btn btn   bg-white  "
+                    data-filter="completTask">المهام المكتمله</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tasks_content" id="id="titel-tasks"">
+        <h1 class="titel-tasks" ></h1>
+        <!-- start tasks -->
+        <div class="tasks p-4" id="tasks">
+
+            <div class=" row task bg-white d-flex p-1 mb-2 ">
+                <!-- This code come from JavSecrept -->
+                <!-- start task Info -->
+                <!-- <div class="col-lg-8 col-12 col-sm-8">
+                    <div class="task_info ">
+                        <h4>قراءة كتاب</h4>
+                        <div>
+                            <i class=" fas fa-calendar"></i>
+                            <span> 10/10/2030</span>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- end task Info -->
+    
+                <!-- start task Action -->
+                <!-- <div class="col-lg-4 col-12 col-sm-4">
+                    <div class="action_btn d-flex align-items-center justify-content-between ">
+                        <button class=" circular deleat text-white mt-2"> <i class="fa  fa-trash"></i></button>
+    
+                        <button class=" circular corect text-white mt-2"> <i class="fa  fa-check"></i></button>
+    
+                        <button class=" circular edat text-white mt-2"> <i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                </div> -->
+                <!-- end task Action -->
+                
+            </div>
+
+        </div>
+
+        <!-- end tasks -->
+    </div>
+
+
+    <!-- //اضافه -->
+    <div class="back-popup">
+        <div class="popup" id="add-popup">
+            <div class="popup-content">
+                <i class="  fas fa-times" id="form-close"></i>
+                <h4 class="mt-3">عنوان المهمه الجديده</h4>
+                <input id="inputTask" type="text" placeholder="الرجاء ادخال عنوان المهمه">
+                <a class=" add-btn btn poupe-btn btn-popuo" id="addTask"> </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- //حذف -->
+    <div class="del-popup " id="del-popup">
+        <div class="popup-content">
+            <i class="  fas fa-times" id="form-close-del" onclick="closeDeleteDialog"></i>
+            <h4 class="mt-5" id="h4-dell">
+                <span>هل تريد حذف مهمه</span>
+                <span id="task-name" />
+            </h4>
+            <!-- <input id="inputTask" type="text" placeholder="الرجاء ادخال عنوان المهمه" > -->
+            <a class="delet-btn btn poupe-btn mt-5 " id="delet-task"> حذف </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- bootstrap File js -->
+    <script src="js_file/bootstrap.bundle.min.js"></script>
+    <!-- js File -->
+    <script src="js_file/main.js"></script>
+
+    <script src="js_file/second.js"></script>
+</body>
+
+</html>
